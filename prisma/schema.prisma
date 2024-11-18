@@ -1,0 +1,41 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+model Movie{
+  id    Int @id @default(autoincrement())
+  title String  
+  director String  
+  time String  
+  date String  
+  description String 
+  image Bytes?
+  type String @default("Sci-fi")
+  seats Seat[]
+}
+model Seat{
+  id    Int @id @default(autoincrement())
+  seatname String
+  name String
+  mobile String
+  age String
+  gender String
+  Movie   Movie @relation(fields: [MoveId], references: [id])
+  MoveId Int
+}
+
+
+model User{
+   id    Int @id @default(autoincrement())
+  email String
+  password String
+  role String @default("user")
+}
+

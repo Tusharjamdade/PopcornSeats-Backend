@@ -1,0 +1,29 @@
+name = "popcornseat-backend"
+main = "src/index.ts"
+compatibility_date = "2024-10-30"
+compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZTI1MWM4YjgtMmQ2YS00MmQyLWJlYTAtMzlkZDJmYzQ5MDk4IiwidGVuYW50X2lkIjoiMGNiYzUyNTBmZjE2M2Q1NWFmNzM0ODYyM2QzNzhiZTYxNjU1ZmFmZGJkYTVlM2I3YTUwN2U5OWU1NGM3OGMwMCIsImludGVybmFsX3NlY3JldCI6ImUyNWM2N2RkLWFmNWYtNDkxZi1hZWVkLWE4ZTZiZWVmZjFkYyJ9.4yLQKuFLzmWvcV2uhBdG_TbjDxJYN5Uff35TVcxWH4E"
+DIRECT_URL="postgresql://Test_owner:RauLqSOWsP93@ep-green-shape-a5bxawwl.us-east-2.aws.neon.tech/popcornseats?sslmode=require"
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1
